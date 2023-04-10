@@ -20,6 +20,6 @@ if __name__ == "__main__":
     unsorted_list = input_list(10)
     n = len(unsorted_list)
 
+    print(f"Before sorting : {unsorted_list}")
     quick_sort(unsorted_list, 0, n-1)
-    print(unsorted_list)
-
+    print(f"After sorting : {unsorted_list}")
