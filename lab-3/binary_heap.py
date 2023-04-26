@@ -53,10 +53,11 @@ class BinHeap:
 
     # Implement to perform heap sort in the tree.
     def heap_sort(self):
-        sorted = []
-        for _ in range(self.current_size):
-            sorted.append(self.delete_min_value())
-        return sorted
+        # sorted = []
+        # for _ in range(self.current_size):
+        #     sorted.append(self.delete_min_value())
+        # return sorted
+        return [self.delete_min_value() for _ in range(self.current_size)]
 
 # Create an instance of BinHeap, and insert 5 elements and display the contents.
 bh_1 = BinHeap()
