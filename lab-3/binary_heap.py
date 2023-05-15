@@ -59,25 +59,26 @@ class BinHeap:
         # return sorted
         return [self.delete_min_value() for _ in range(self.current_size)]
 
-# Create an instance of BinHeap, and insert 5 elements and display the contents.
-bh_1 = BinHeap()
-bh_1.insert(12)
-bh_1.insert(34)
-bh_1.insert(21)
-bh_1.insert(78)
-bh_1.insert(56)
-print(bh_1.heap_list)
+if __name__ == "__main__":
+    # Create an instance of BinHeap, and insert 5 elements and display the contents.
+    bh_1 = BinHeap()
+    bh_1.insert(10)
+    bh_1.insert(6)
+    bh_1.insert(5)
+    bh_1.insert(8)
+    bh_1.insert(3)
+    print(bh_1.heap_list)
 
-# Initialize a list with 10 values and build the heap tree for the list.
-bh_2 = BinHeap()
-list_values = [43, 11, 38, 78, 57, 90, 67, 33, 99, 21]
-bh_2.build_heap(list_values)
-print(bh_2.heap_list)
+    # Initialize a list with 10 values and build the heap tree for the list.
+    bh_2 = BinHeap()
+    list_values = [43, 11, 38, 78, 57, 90, 67, 33, 99, 21]
+    bh_2.build_heap(list_values)
+    print(bh_2.heap_list)
 
-# Delete min value from heap tree.
-min_value = bh_2.delete_min_value()
-print(f"Minimum value from heap tree: {min_value}")
+    # Delete min value from heap tree.
+    min_value = bh_2.delete_min_value()
+    print(f"Minimum value from heap tree: {min_value}")
 
-# Implement heap sort.
-sorted_list = bh_2.heap_sort()
-print(f"Sorted List: {sorted_list}")
+    # Implement heap sort.
+    sorted_list = bh_2.heap_sort()
+    print(f"Sorted List: {sorted_list}")
