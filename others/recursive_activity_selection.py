@@ -9,8 +9,8 @@ def RAS(s, f, k, n):
         return []
 
 if __name__ == "__main__":
-    start_times = [1, 3, 0, 5, 3, 5, 6, 8, 8, 2, 12]
-    finish_times = [4, 5, 6, 7, 9, 9, 10, 11, 12, 14, 16]
+    start_times = [0, 1, 3, 0, 5, 3, 5, 6, 8, 8, 2, 12]
+    finish_times = [0, 4, 5, 6, 7, 9, 9, 10, 11, 12, 14, 16]
     k = 0
     total_activities = len(start_times) - 1
     selected_activtives = RAS(start_times, finish_times, k, total_activities)
